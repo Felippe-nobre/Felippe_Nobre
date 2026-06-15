@@ -32,18 +32,6 @@ body.light .header {
   border-bottom: 1px solid var(--border-soft);
 }
 
-body.light .header{
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-
-    backdrop-filter: blur(10px);
-    background: var(--bg-header);
-
-    border-bottom: 1px solid var(--border-soft);
-}
-
 
 /* CARDS (mais suaves) */
 body.light .skill-box,
@@ -167,19 +155,13 @@ body.light .filter-btn:hover,body.light .filter-btn.active {
   color: var(--btn-filter);
 }
 
-
 /* THEME BUTTON */
 body.light .theme-toggle {
-  background: transparent; 
+  background: transparent;
   border: 1px solid var(--border-soft);
   color: var(--text-primary);
 }
 
 body.light .theme-toggle:hover {
   background: rgba(0,0,0,0.05);
-}
-
-/*footer*/
-.footer {
- color: var(--text-primary);
 }

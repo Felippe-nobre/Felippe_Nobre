@@ -54,6 +54,21 @@ html {
   scroll-behavior: smooth;
 }
 
+/* CONTAINER (substitui a dependência do Bootstrap, usado só para isso) */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Compensa o header sticky ao navegar pelas âncoras do menu */
+.sobre,
+.skills-dashboard,
+.projects-section,
+.contact-section {
+  scroll-margin-top: 80px;
+}
+
 /* BODY */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -84,6 +99,12 @@ body {
   -webkit-text-fill-color: transparent;
 
   animation: shine 4s linear infinite;
+}
+
+/* TÍTULO PRINCIPAL (Hero) */
+.titulo-hero {
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
 @keyframes shine {
@@ -748,6 +769,17 @@ textarea {
 
   .sobre-container {
     grid-template-columns: 1fr;
+  }
+
+  .sobre {
+    margin-top: 140px;
+  }
+
+  .sobre,
+  .skills-dashboard,
+  .projects-section,
+  .contact-section {
+    scroll-margin-top: 140px;
   }
 
   .skill-items {

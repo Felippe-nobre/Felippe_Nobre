@@ -3,6 +3,7 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('show');
+      observer.unobserve(entry.target);
     }
   });
 });
@@ -117,14 +118,9 @@ function updateThemeButton(isLight) {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  const savedTheme = localStorage.getItem('theme');
-
-  if (savedTheme === 'light') {
-    document.body.classList.add('light');
-    updateThemeButton(true);
-  } else {
-    updateThemeButton(false);
-  }
+  // O tema já foi aplicado pelo script inline no <head>, aqui só sincronizamos o texto do botão
+  const isLight = document.body.classList.contains('light');
+  updateThemeButton(isLight);
 });
 
 //scroll suave para links internos
