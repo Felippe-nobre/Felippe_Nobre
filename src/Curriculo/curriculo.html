@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo — Felippe Nobre de Souza</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="/src/css/curriculo.css">
+
+</head>
+
+<body>
+
+    <button id="btn-download">⬇ Baixar como PDF</button>
+
+    <div id="curriculo">
+
+        <!-- CABEÇALHO -->
+        <div class="cabecalho">
+            <h1>Felippe Nobre de Souza</h1>
+            <p class="cargo">Desenvolvedor Web · PHP · Laravel · JavaScript</p>
+            <div class="contatos">
+                <span>📞 (11) 94714-7713</span>
+                <span>✉ felippenobredesouza@gmail.com</span>
+                <span>🔗 <a
+                        href="https://linkedin.com/in/felippe-nobre-de-souza">linkedin.com/in/felippe-nobre-de-souza</a></span>
+                <span>💻 <a href="https://github.com/Felippe-nobre">github.com/Felippe-nobre</a></span>
+                <span>🌐 <a href="https://felippe-nobre.vercel.app">felippe-nobre.vercel.app</a></span>
+            </div>
+        </div>
+
+        <div class="layout">
+
+            <!-- COLUNA PRINCIPAL -->
+            <div class="principal">
+
+                <!-- RESUMO -->
+                <div class="secao resumo">
+                    <p class="secao-titulo">Resumo Profissional</p>
+                    <p>
+                        Desenvolvedor web com mais de 1 ano de experiência prática em PHP, Laravel e JavaScript, atuando
+                        como estagiário na SAGA Virtual. No dia a dia participo do desenvolvimento e manutenção de
+                        aplicações web, implementando novas funcionalidades, corrigindo bugs e integrando APIs REST
+                        utilizando PHP, Laravel e JavaScript. Também desenvolvi projetos pessoais, incluindo um sistema
+                        de pedidos para açaiteria integrado ao WhatsApp e uma plataforma de controle vacinal baseada nas
+                        recomendações do Ministério da Saúde. Cursando Análise e Desenvolvimento de Sistemas e
+                        aprofundando conhecimentos em React e Node.js.
+                    </p>
+                </div>
+
+                <!-- EXPERIÊNCIA -->
+                <div class="secao">
+                    <p class="secao-titulo">Experiência Profissional</p>
+
+                    <div>
+                        <div class="exp-header">
+                            <h3>Desenvolvedor Web — Estagiário</h3>
+                            <span class="periodo">Fev/2025 – Atual</span>
+                        </div>
+                        <p class="exp-empresa">SAGA Virtual · Desenvolvimento de Software · São Paulo, SP (Remoto)</p>
+                        <ul class="exp-lista">
+                            <li>Desenvolvimento de calculadoras médicas (ABG Calculator e QTc Calculator) utilizando
+                                JavaScript e HTML5</li>
+                            <li>Conversão de aplicações Python para JavaScript, garantindo paridade funcional</li>
+                            <li>Desenvolvimento de Progressive Web Apps (PWAs) e aplicações mobile com Cordova e
+                                Framework7</li>
+                            <li>Manutenção e evolução de aplicações web em PHP e Laravel</li>
+                            <li>Integração de APIs REST e manipulação de banco de dados MySQL</li>
+                            <li>Criação de interfaces responsivas com Bootstrap</li>
+                            <li>Versionamento com Git e GitHub em ambiente colaborativo</li>
+                        </ul>
+                        <p class="exp-stack">Stack: PHP · Laravel · JavaScript · HTML5 · CSS3 · Bootstrap · MySQL · Git
+                            · Cordova · Framework7</p>
+                    </div>
+                </div>
+
+                <!-- PROJETOS PESSOAIS -->
+                <div class="secao">
+                    <p class="secao-titulo">Projetos Pessoais</p>
+
+                    <div class="proj-item">
+                        <div class="proj-header">
+                            <h3>RoxOut — Sistema de Pedidos para Açaiteria</h3>
+                            <a href="https://loja-acai-silk.vercel.app">ver projeto ↗</a>
+                        </div>
+                        <p>Cardápio digital com seleção de produtos, cálculo automático de valores e envio de pedido via
+                            WhatsApp.</p>
+                        <p class="proj-tech">JavaScript · HTML · CSS · Bootstrap</p>
+                    </div>
+
+                    <div class="proj-item">
+                        <div class="proj-header">
+                            <h3>ImuniTrack — Plataforma de Controle Vacinal</h3>
+                            <a href="https://imuni-track.vercel.app">ver projeto ↗</a>
+                        </div>
+                        <p>Calendário vacinal baseado no Ministério da Saúde com dashboard, histórico e sistema de
+                            login/cadastro.</p>
+                        <p class="proj-tech">JavaScript · HTML · CSS · Bootstrap</p>
+                    </div>
+
+                    <div class="proj-item">
+                        <div class="proj-header">
+                            <h3>AetherSoft — Landing Page Institucional</h3>
+                        </div>
+                        <p>Landing page para software house com design moderno e foco em conversão.</p>
+                        <p class="proj-tech">HTML · CSS · JavaScript</p>
+                    </div>
+                </div>
+
+                <!-- FORMAÇÃO -->
+                <div class="secao">
+                    <p class="secao-titulo">Formação Acadêmica</p>
+                    <div>
+                        <div class="form-header">
+                            <h3>Análise e Desenvolvimento de Sistemas</h3>
+                            <span class="periodo">Jul/2024 – Dez/2026</span>
+                        </div>
+                        <p class="form-inst">Anhanguera Educacional · Cursando</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- COLUNA LATERAL -->
+            <div class="lateral">
+
+                <!-- COMPETÊNCIAS -->
+                <div class="secao">
+                    <p class="secao-titulo">Competências Técnicas</p>
+
+                    <div class="comp-grupo">
+                        <p class="comp-label">Front-end</p>
+                        <p>HTML5, CSS3, JavaScript (ES6+), Bootstrap, Tailwind</p>
+                    </div>
+                    <div class="comp-grupo">
+                        <p class="comp-label">Back-end</p>
+                        <p>PHP, Laravel, Node.js (em aprendizado)</p>
+                    </div>
+                    <div class="comp-grupo">
+                        <p class="comp-label">Mobile / PWA</p>
+                        <p>Cordova, Framework7, PWA</p>
+                    </div>
+                    <div class="comp-grupo">
+                        <p class="comp-label">Banco de Dados</p>
+                        <p>MySQL</p>
+                    </div>
+                    <div class="comp-grupo">
+                        <p class="comp-label">Ferramentas</p>
+                        <p>Git, GitHub, VS Code, REST APIs, JSON, Consumo de APIs</p>
+                    </div>
+                    <div class="comp-grupo">
+                        <p class="comp-label" style="font-size:10px; color:#888; font-weight:400;">* em aprendizado</p>
+                    </div>
+                </div>
+
+                <!-- CERTIFICAÇÕES -->
+                <div class="secao">
+                    <p class="secao-titulo">Certificações</p>
+                    <p class="cert-item">UI Design para Devs — Alura (2026)</p>
+                    <p class="cert-item">Formação Laravel — Alura (2025)</p>
+                    <p class="cert-item">Formação PHP Web — Alura (2025)</p>
+                    <p class="cert-item">React com JavaScript — Alura (2025)</p>
+                    <p class="cert-item">Git e GitHub — Alura (2025)</p>
+                    <p class="cert-item">JavaScript — Alura (2025)</p>
+                    <p class="cert-item">HTML e CSS — Alura (2025)</p>
+                    <p class="cert-item">Bootstrap 5 — Alura (2025)</p>
+                </div>
+
+                <!-- IDIOMAS -->
+                <div class="secao">
+                    <p class="secao-titulo">Idiomas</p>
+                    <p class="idioma-item">Inglês — Básico (leitura técnica)</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="/src/js/curriculo.js"></script>
+
+</body>
+
+</html>
