@@ -722,51 +722,107 @@ textarea {
   font-weight: bold;
 }
 
-/* RESPONSIVO */
+
+
+/* =======================================================
+   RESPONSIVIDADE
+======================================================= */
 
 @media (max-width: 768px) {
+
+  /* HEADER */
+
   .header {
-    padding: 10px;
+    padding: 10px 0;
   }
 
   .nav-container {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    align-items: center;
+    gap: 14px;
+    text-align: center;
   }
 
   .nav-links {
-    width: 100%;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
   }
 
   .nav-links a {
-    font-size: 13px;
+    font-size: 14px;
   }
 
-  .theme-toggle {
-    padding: 5px 8px;
-    font-size: 12px;
+  /* SOBRE */
+
+  .sobre {
+    margin-top: 120px;
+    padding: 50px 16px;
   }
 
   .sobre-container {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
 
-  .sobre {
-    margin-top: 140px;
+  .sobre-texto {
+    text-align: center;
   }
 
-  .sobre,
-  .skills-dashboard,
-  .projects-section,
-  .contact-section {
-    scroll-margin-top: 140px;
+  .titulo-hero {
+    font-size: 34px;
+  }
+
+  .sobre-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .sobre-card {
+    width: 100%;
+  }
+
+  /* SKILLS */
+
+  .skills-dashboard {
+    padding: 60px 16px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .skill-box {
+    min-width: 0;
   }
 
   .skill-items {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .item {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* PROJETOS */
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* CONTATO */
+
+  .contact-section {
+    max-width: 100%;
+    padding: 0 16px;
   }
 
   .contact-actions {
@@ -774,7 +830,59 @@ textarea {
   }
 
   .contact-actions a {
-    justify-content: center;
     width: 100%;
+    justify-content: center;
   }
+
+}
+
+/* =======================================================
+   CELULARES PEQUENOS
+======================================================= */
+
+@media (max-width: 480px) {
+
+  .titulo-hero {
+    font-size: 28px;
+    line-height: 1.25;
+  }
+
+  .sobre h2 {
+    font-size: 30px;
+  }
+
+  .sobre-texto p {
+    font-size: 15px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .sobre-buttons {
+    flex-direction: column;
+  }
+
+  .skill-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .item {
+    padding: 16px 10px;
+  }
+
+  .item i {
+    font-size: 24px;
+  }
+
+  .item span {
+    font-size: 11px;
+  }
+
+  .project-card img {
+    height: 180px;
+  }
+
 }
